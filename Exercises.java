@@ -13,6 +13,14 @@ public class Exercises {
         System.out.println();
     }
 
+    public void exercise2(HashMap<String, Integer> hashMap)
+    {
+        System.out.println("2nd exercise: Write a Java program to count the number of key-value (size) mappings in a map");
+        System.out.println(hashMap);
+        System.out.println("The size of the map is: " + hashMap.size());
+        System.out.println();
+    }
+
     public HashMap<String, Integer> getExercises()
     {
         return exercises;

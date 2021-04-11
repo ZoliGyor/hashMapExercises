@@ -4,6 +4,7 @@ public class Main
     {
         Exercises exercises = new Exercises();
 
-        exercises.exercise1(exercises.getExercises());    
+        exercises.exercise1(exercises.getExercises());
+        exercises.exercise2(exercises.getExercises());   
     }
 }
