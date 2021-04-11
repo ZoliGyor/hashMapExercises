@@ -73,12 +73,26 @@ public class Exercises {
 
     public void exercise7(HashMap<String, Integer> hashMap, String key)
     {
+        System.out.println("7th exercise: Write a Java program to test if a map contains a mapping for the specified key");
         System.out.println(hashMap);
         System.out.println("Key we are looking for: " + key);
         if(hashMap.containsKey(key)){
             System.out.println("The map contains the key"); 
         }else{
             System.out.println("The map does not contains the key");
+        }
+        System.out.println();
+    }
+
+    public void exercise8(HashMap<String, Integer> hashMap, Integer value)
+    {
+        System.out.println("8th exercise: Write a Java program to test if a map contains a mapping for the specified value");
+        System.out.println(hashMap);
+        System.out.println("The value we are looking for: " + value);
+        if(hashMap.containsValue(value)){
+            System.out.println("The map contains the value");
+        }else{
+            System.out.println("The map does not contain the value");
         }
         System.out.println();
     }

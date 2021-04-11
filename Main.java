@@ -15,5 +15,6 @@ public class Main
 
         table2.exercise6(table2.getExercises(), table1.getExercises());
         table2.exercise7(table2.getExercises(), "Veth");
+        table2.exercise8(table2.getExercises(), 11);
     }
 }
