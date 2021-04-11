@@ -21,6 +21,17 @@ public class Exercises {
         System.out.println();
     }
 
+    public void exercise3(HashMap<String, Integer> hashMap1, HashMap<String, Integer> hashMap2)
+    {
+        System.out.println("3rd exercise: Write a Java program to copy all of the mappings from the specified map to another map");
+        System.out.println("Map1: " + hashMap1);
+        System.out.println("Map2: " + hashMap2);
+        System.out.println("Copying everthing from map1 to map2...");
+        hashMap2 = (HashMap<String, Integer>) hashMap1.clone();
+        System.out.println("Map2: " + hashMap2);
+        System.out.println();
+    }
+
     public HashMap<String, Integer> getExercises()
     {
         return exercises;
