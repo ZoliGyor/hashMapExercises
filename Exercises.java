@@ -71,6 +71,18 @@ public class Exercises {
         System.out.println();
     }
 
+    public void exercise7(HashMap<String, Integer> hashMap, String key)
+    {
+        System.out.println(hashMap);
+        System.out.println("Key we are looking for: " + key);
+        if(hashMap.containsKey(key)){
+            System.out.println("The map contains the key"); 
+        }else{
+            System.out.println("The map does not contains the key");
+        }
+        System.out.println();
+    }
+    
     public HashMap<String, Integer> getExercises()
     {
         return exercises;
