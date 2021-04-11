@@ -96,6 +96,14 @@ public class Exercises {
         }
         System.out.println();
     }
+
+    public void exercise9(HashMap<String, Integer> hashMap)
+    {
+        System.out.println("9th exercise: Write a Java program to create a set view of the mappings contained in a map");
+        System.out.println(hashMap);
+        System.out.println("Set view of the mappings: " + hashMap.entrySet());
+        System.out.println();
+    }
     
     public HashMap<String, Integer> getExercises()
     {
