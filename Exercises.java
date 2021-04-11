@@ -3,12 +3,19 @@ import java.util.HashMap;
 public class Exercises {
     private HashMap<String, Integer> exercises = new HashMap<String, Integer>();
 
-    public void exercise1(HashMap<String, Integer> hashMap)
+    public void exercise1(HashMap<String, Integer> hashMap, int selector)
     {
         System.out.println("1st exercise: Write a Java program to associate the specified value with the specified key in a HashMap");
-        hashMap.put("Fjord", 1);
-        hashMap.put("Jester", 1);
-        hashMap.put("Caleb", 1);
+        if(selector == 1){
+            hashMap.put("Fjord", 1);
+            hashMap.put("Jester", 1);
+            hashMap.put("Caleb", 1);
+        }else if(selector == 2){
+            hashMap.put("Veth", 1);
+            hashMap.put("Yasha", 1);
+            hashMap.put("Caduceus", 1);
+            hashMap.put("Beauregard", 1);
+        }
         System.out.println(hashMap);
         System.out.println();
     }
@@ -29,6 +36,15 @@ public class Exercises {
         System.out.println("Copying everthing from map1 to map2...");
         hashMap2 = (HashMap<String, Integer>) hashMap1.clone();
         System.out.println("Map2: " + hashMap2);
+        System.out.println();
+    }
+
+    public void exercise4(HashMap<String, Integer> hashMap)
+    {
+        System.out.println("4th exercise: Write a Java program to remove all of the mappings from a map");
+        System.out.println(hashMap);
+        hashMap.clear();
+        System.out.println(hashMap);
         System.out.println();
     }
 
