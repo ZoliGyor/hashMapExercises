@@ -48,6 +48,18 @@ public class Exercises {
         System.out.println();
     }
 
+    public void exercise5(HashMap<String, Integer> hashMap)
+    {
+        System.out.println("5th exercise: Write a Java program to check whether a map contains key-value mappings (empty) or not");
+        System.out.println(hashMap);
+        if(hashMap.isEmpty()){
+            System.out.println("The map is empty");
+        }else{
+            System.out.println("The map is not empty");
+        }
+        System.out.println();
+    }
+
     public HashMap<String, Integer> getExercises()
     {
         return exercises;
