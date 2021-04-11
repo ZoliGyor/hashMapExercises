@@ -19,5 +19,6 @@ public class Main
         table2.exercise9(table2.getExercises());
         table2.exercise10(table2.getExercises(), "Caleb");
         table2.exercise11(table2.getExercises());
+        table2.exercise12(table2.getExercises());
     }
 }

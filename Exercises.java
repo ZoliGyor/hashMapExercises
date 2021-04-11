@@ -132,6 +132,14 @@ public class Exercises {
         System.out.println("The keys of the map are: " + hashMap.keySet());
         System.out.println();
     }
+
+    public void exercise12(HashMap<String, Integer> hashMap)
+    {
+        System.out.println("12th exercise: Write a Java program to get a collection view of the values contained in this map");
+        System.out.println(hashMap);
+        System.out.println("The values of the map are: " + hashMap.values());
+        System.out.println();
+    }
     
     public HashMap<String, Integer> getExercises()
     {
