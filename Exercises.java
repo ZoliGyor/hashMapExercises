@@ -33,8 +33,8 @@ public class Exercises {
         System.out.println("3rd exercise: Write a Java program to copy all of the mappings from the specified map to another map");
         System.out.println("Map1: " + hashMap1);
         System.out.println("Map2: " + hashMap2);
-        System.out.println("Copying everthing from map1 to map2...");
-        hashMap2 = (HashMap<String, Integer>) hashMap1.clone();
+        System.out.println("Copying everthing from map1 into map2...");
+        hashMap2.putAll(hashMap1);
         System.out.println("Map2: " + hashMap2);
         System.out.println();
     }
@@ -57,6 +57,17 @@ public class Exercises {
         }else{
             System.out.println("The map is not empty");
         }
+        System.out.println();
+    }
+
+    public void exercise6(HashMap<String, Integer> hashMap1, HashMap<String, Integer> hashMap2)
+    {
+        System.out.println("6th exercise: Write a Java program to get a shallow copy of a HashMap instance");
+        System.out.println(hashMap1);
+        System.out.println(hashMap2);
+        System.out.println("Copying everthing from map1 into map2...");
+        hashMap2 = (HashMap<String, Integer>) hashMap1.clone();
+        System.out.println("Map2: " + hashMap2);
         System.out.println();
     }
 

@@ -12,5 +12,7 @@ public class Main
         table1.exercise3(table1.getExercises(), table2.getExercises());
         table1.exercise4(table1.getExercises());
         table1.exercise5(table1.getExercises());
+
+        table2.exercise6(table2.getExercises(), table1.getExercises());
     }
 }
