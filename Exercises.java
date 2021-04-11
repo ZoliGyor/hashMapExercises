@@ -1,3 +1,4 @@
+import java.security.KeyStore.Entry;
 import java.util.HashMap;
 
 public class Exercises {
@@ -8,13 +9,13 @@ public class Exercises {
         System.out.println("1st exercise: Write a Java program to associate the specified value with the specified key in a HashMap");
         if(selector == 1){
             hashMap.put("Fjord", 1);
-            hashMap.put("Jester", 1);
-            hashMap.put("Caleb", 1);
+            hashMap.put("Jester", 2);
+            hashMap.put("Caleb", 3);
         }else if(selector == 2){
-            hashMap.put("Veth", 1);
-            hashMap.put("Yasha", 1);
-            hashMap.put("Caduceus", 1);
-            hashMap.put("Beauregard", 1);
+            hashMap.put("Veth", 4);
+            hashMap.put("Yasha", 5);
+            hashMap.put("Caduceus", 6);
+            hashMap.put("Beauregard", 7);
         }
         System.out.println(hashMap);
         System.out.println();
@@ -102,6 +103,25 @@ public class Exercises {
         System.out.println("9th exercise: Write a Java program to create a set view of the mappings contained in a map");
         System.out.println(hashMap);
         System.out.println("Set view of the mappings: " + hashMap.entrySet());
+        System.out.println();
+    }
+
+    public void exercise10(HashMap<String, Integer> hashMap, String key)
+    {
+        System.out.println("10th exercise: Write a Java program to get the value of a specified key in a map");
+        System.out.println(hashMap);
+        System.out.println("We are looking for the value of this key: " + key);
+        int value = -1;
+        for(HashMap.Entry<String, Integer> entry : hashMap.entrySet()) {
+            if(entry.getKey().equals(key)){
+                value = entry.getValue();
+            }
+        }
+        if(value == -1){
+            System.out.println("The key was not in the map");
+        }else{
+            System.out.println("The value of the specified key in the map is: " + value);
+        }
         System.out.println();
     }
     
